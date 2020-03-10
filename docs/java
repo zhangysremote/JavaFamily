@@ -1,0 +1,15 @@
+https://blog.csdn.net/blueling51/article/details/6928900
+StringBuilder 没有提供clear或empty方法。
+清空有3种方法：
+1）新生成一个，旧的由系统自动回收
+2）使用delete *** 推荐
+3）使用setLength
+将三种方法循环1000万次，代码：
+
+注意append的字符串要都不相同，否则会因为java 的String  pool对结果造成影响（即3好于2），结果：
+1.Way1=9438
+2.Way2=6281
+3.Way3=6469
+
+可以将各方法多重复几次，点到顺序，等
+总体来看：方法2好于方法3好于方法1
