@@ -20,6 +20,7 @@ StringBuilder 没有提供clear或empty方法。
 =========================================================================================================================================================================================
 GC:
 https://blog.csdn.net/weixin_34109408/article/details/85748049   
+原创：https://www.cnblogs.com/qianguyihao/p/4744233.html
 GC：Garbage Collection 垃圾收集
 1960年 Lisp使用了GC
 Java中，GC的对象是Java堆和方法区（即永久区）
